@@ -1,4 +1,5 @@
-{"categories": [
+{
+    "categories": [
       {
         "id": "cat0",
         "defaultLabel": "Identity information",
@@ -6,9 +7,6 @@
           {
             "name": "cn",
             "defaultLabel": "Unique identifier *:",
-            "identity": {
-              "authoritative": true
-            },
             "syntax": {
               "type": "text",
               "case": "mixedcase"
@@ -29,10 +27,6 @@
           {
             "name": "sn",
             "defaultLabel": "Lastname *:",
-            "identity": {
-              "authoritative": false,
-              "isUsedForDuplicatesDetection": true
-            },
             "orgChart": {
               "compactDisplay": true
             },
@@ -56,10 +50,6 @@
           {
             "name": "givenName",
             "defaultLabel": "Firstname *:",
-            "identity": {
-              "authoritative": false,
-              "isUsedForDuplicatesDetection": true
-            },
             "syntax": {
               "type": "text",
               "case": "mixedcase"
@@ -80,12 +70,6 @@
           {
             "name": "displayName",
             "defaultLabel": "Displayed name *:",
-            "identity": {
-              "authoritative": false
-            },
-            "orgChart": {
-              "compactDisplay": true
-            },
             "syntax": {
               "type": "text",
               "case": "mixedcase"
@@ -106,9 +90,6 @@
           {
             "name": "jpegPhoto",
             "defaultLabel": "Photo",
-            "identity": {
-              "authoritative": false
-            },
             "syntax": {
               "type": "photo"
             },
@@ -127,9 +108,6 @@
           {
             "name": "telephoneNumber",
             "defaultLabel": "Phone number:",
-            "identity": {
-              "authoritative": false
-            },
             "syntax": {
               "type": "text"
             },
@@ -148,9 +126,6 @@
           {
             "name": "mobile",
             "defaultLabel": "Mobile number:",
-            "identity": {
-              "authoritative": false
-            },
             "syntax": {
               "type": "text"
             },
@@ -169,9 +144,6 @@
           {
             "name": "roomNumber",
             "defaultLabel": "Room:",
-            "identity": {
-              "authoritative": false
-            },
             "syntax": {
               "type": "text"
             },
@@ -189,9 +161,6 @@
           {
             "name": "mail",
             "defaultLabel": "eMail address:",
-            "identity": {
-              "authoritative": false
-            },
             "syntax": {
               "type": "text"
             },
@@ -210,9 +179,6 @@
           {
             "name": "manager",
             "defaultLabel": "Manager:",
-            "identity": {
-              "authoritative": false
-            },
             "syntax": {
               "type": "dn"
             },
@@ -236,9 +202,6 @@
           {
             "name": "evdidmUserOrgzs",
             "defaultLabel": "Organizations:",
-            "identity": {
-              "authoritative": false
-            },
             "syntax": {
               "type": "dn"
             },
@@ -263,9 +226,6 @@
           {
             "name": "evdidmActivationLevel",
             "defaultLabel": "Activation level:",
-            "identity": {
-              "authoritative": false
-            },
             "syntax": {
               "selection": [
                 {
@@ -298,9 +258,6 @@
           {
             "name": "preferredLanguage",
             "defaultLabel": "Language:",
-            "identity": {
-              "authoritative": false
-            },
             "syntax": {
               "selection": [
                 {
@@ -342,9 +299,6 @@
           {
             "name": "enatelBeginTime",
             "defaultLabel": "Arrival date:",
-            "identity": {
-              "authoritative": false
-            },
             "syntax": {
               "type": "date"
             },
@@ -363,9 +317,6 @@
           {
             "name": "enatelEndTime",
             "defaultLabel": "Departure date:",
-            "identity": {
-              "authoritative": false
-            },
             "syntax": {
               "type": "date"
             },
@@ -384,9 +335,6 @@
           {
             "name": "enatelAuditId",
             "defaultLabel": "Employee's audit identifier",
-            "identity": {
-              "authoritative": false
-            },
             "syntax": {
               "type": "text"
             },
@@ -404,9 +352,6 @@
           {
             "name": "evdidmPrimaryAuthId",
             "defaultLabel": "",
-            "identity": {
-              "authoritative": false
-            },
             "syntax": {
               "type": "text"
             },
@@ -421,4 +366,4 @@
         ]
       }
     ]
-}
+  }
