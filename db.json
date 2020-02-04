@@ -1,4 +1,4 @@
-"categories": [
+{"categories": [
       {
         "id": "cat0",
         "defaultLabel": "Identity information",
@@ -421,3 +421,4 @@
         ]
       }
     ]
+}
