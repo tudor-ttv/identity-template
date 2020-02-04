@@ -1,0 +1,451 @@
+{
+  "id": "6000001a94481146",
+  "name": "Standard Identity Template (Draft)",
+  "type": "IDENTITY",
+  "state": "DRAFT",
+  "whenCreated": "2020-02-04T14:01:24Z",
+  "whenChanged": null,
+  "createdBy": "?",
+  "description": "Standard Identity Template Reference",
+  "parentId": "6000001ddddddddd",
+  "localizedNames": [
+    {
+      "lang": "en",
+      "value": "Standard Identity Template (Draft)",
+      "default": true
+    }
+  ],
+  "localizedDescriptions": [
+    {
+      "lang": "en",
+      "value": "Standard Identity Template Reference",
+      "default": true
+    }
+  ],
+  "content": {
+    "categories": [
+      {
+        "id": "cat0",
+        "defaultLabel": "Identity information",
+        "attribute": [
+          {
+            "name": "cn",
+            "defaultLabel": "Unique identifier *:",
+            "identity": {
+              "authoritative": true
+            },
+            "syntax": {
+              "type": "text",
+              "case": "mixedcase"
+            },
+            "form": {
+              "hint": "Employee's unique identifier",
+              "help": "Employee's unique identifier",
+              "errorMessage": "This field is required",
+              "control": "standard",
+              "displayed": "always",
+              "editable": "creation",
+              "mandatory": true,
+              "multi": false,
+              "displayInGroupForms": true
+            },
+            "isEnabled": true
+          },
+          {
+            "name": "sn",
+            "defaultLabel": "Lastname *:",
+            "identity": {
+              "authoritative": false,
+              "isUsedForDuplicatesDetection": true
+            },
+            "orgChart": {
+              "compactDisplay": true
+            },
+            "syntax": {
+              "type": "text",
+              "case": "mixedcase"
+            },
+            "form": {
+              "hint": "Employee's lastname",
+              "help": "Employee's lastname",
+              "errorMessage": "This field is required",
+              "control": "standard",
+              "displayed": "always",
+              "editable": "always",
+              "mandatory": true,
+              "multi": false,
+              "displayInGroupForms": true
+            },
+            "isEnabled": true
+          },
+          {
+            "name": "givenName",
+            "defaultLabel": "Firstname *:",
+            "identity": {
+              "authoritative": false,
+              "isUsedForDuplicatesDetection": true
+            },
+            "syntax": {
+              "type": "text",
+              "case": "mixedcase"
+            },
+            "form": {
+              "hint": "Employee's firstname",
+              "help": "Employee's firstname",
+              "errorMessage": "This field is required",
+              "control": "standard",
+              "displayed": "always",
+              "editable": "always",
+              "mandatory": true,
+              "multi": false,
+              "displayInGroupForms": true
+            },
+            "isEnabled": true
+          },
+          {
+            "name": "displayName",
+            "defaultLabel": "Displayed name *:",
+            "identity": {
+              "authoritative": false
+            },
+            "orgChart": {
+              "compactDisplay": true
+            },
+            "syntax": {
+              "type": "text",
+              "case": "mixedcase"
+            },
+            "form": {
+              "hint": "User name as it should be displayed",
+              "help": "User name as it should be displayed",
+              "errorMessage": "This field is required",
+              "control": "standard",
+              "displayed": "always",
+              "editable": "always",
+              "mandatory": true,
+              "multi": false,
+              "displayInGroupForms": true
+            },
+            "isEnabled": true
+          },
+          {
+            "name": "jpegPhoto",
+            "defaultLabel": "Photo",
+            "identity": {
+              "authoritative": false
+            },
+            "syntax": {
+              "type": "photo"
+            },
+            "form": {
+              "hint": "Employee photograph",
+              "help": "You can choose a photograph by clicking on the Select button",
+              "errorMessage": "The picture has an incorrect format or it is too big",
+              "control": "standard",
+              "displayed": "always",
+              "editable": "always",
+              "mandatory": false,
+              "multi": false
+            },
+            "isEnabled": true
+          },
+          {
+            "name": "telephoneNumber",
+            "defaultLabel": "Phone number:",
+            "identity": {
+              "authoritative": false
+            },
+            "syntax": {
+              "type": "text"
+            },
+            "form": {
+              "hint": "Employee's phone number",
+              "help": "Employee's phone number",
+              "control": "standard",
+              "displayed": "always",
+              "editable": "always",
+              "mandatory": false,
+              "multi": false,
+              "customType": "tel"
+            },
+            "isEnabled": true
+          },
+          {
+            "name": "mobile",
+            "defaultLabel": "Mobile number:",
+            "identity": {
+              "authoritative": false
+            },
+            "syntax": {
+              "type": "text"
+            },
+            "form": {
+              "hint": "Employee's mobile number",
+              "help": "Employee's mobile number",
+              "control": "standard",
+              "displayed": "always",
+              "editable": "always",
+              "mandatory": false,
+              "multi": false,
+              "customType": "tel"
+            },
+            "isEnabled": true
+          },
+          {
+            "name": "roomNumber",
+            "defaultLabel": "Room:",
+            "identity": {
+              "authoritative": false
+            },
+            "syntax": {
+              "type": "text"
+            },
+            "form": {
+              "hint": "Employee's room number",
+              "help": "Employee's room number",
+              "control": "standard",
+              "displayed": "always",
+              "editable": "always",
+              "mandatory": false,
+              "multi": false
+            },
+            "isEnabled": true
+          },
+          {
+            "name": "mail",
+            "defaultLabel": "eMail address:",
+            "identity": {
+              "authoritative": false
+            },
+            "syntax": {
+              "type": "text"
+            },
+            "form": {
+              "hint": "Employee's eMail address",
+              "help": "Employee's eMail address",
+              "control": "standard",
+              "displayed": "always",
+              "editable": "always",
+              "mandatory": false,
+              "multi": false,
+              "customType": "mail"
+            },
+            "isEnabled": true
+          },
+          {
+            "name": "manager",
+            "defaultLabel": "Manager:",
+            "identity": {
+              "authoritative": false
+            },
+            "syntax": {
+              "type": "dn"
+            },
+            "form": {
+              "searchControl": {
+                "searchConfiguration": "searchUsers",
+                "baseDN": "IAMIDENTITY",
+                "filter": ""
+              },
+              "hint": "Employee's manager",
+              "help": "Employee's manager",
+              "control": "search",
+              "displayed": "always",
+              "editable": "always",
+              "mandatory": false,
+              "multi": false,
+              "displayAttribute": "displayName"
+            },
+            "isEnabled": true
+          },
+          {
+            "name": "evdidmUserOrgzs",
+            "defaultLabel": "Organizations:",
+            "identity": {
+              "authoritative": false
+            },
+            "syntax": {
+              "type": "dn"
+            },
+            "form": {
+              "searchControl": {
+                "searchConfiguration": "searchOus",
+                "baseDN": "",
+                "filter": "(!(objectclass=evdidmIdentityRepository))"
+              },
+              "hint": "Services (and Sites) the employee belongs to",
+              "help": "Services (and Sites) the employee belongs to",
+              "control": "search",
+              "displayed": "always",
+              "editable": "always",
+              "mandatory": false,
+              "multi": true,
+              "displayAttribute": "wgPrettyName",
+              "customType": "org"
+            },
+            "isEnabled": true
+          },
+          {
+            "name": "evdidmActivationLevel",
+            "defaultLabel": "Activation level:",
+            "identity": {
+              "authoritative": false
+            },
+            "syntax": {
+              "selection": [
+                {
+                  "value": "999",
+                  "label": "Activated"
+                },
+                {
+                  "value": "0",
+                  "label": "Deactivated"
+                }
+              ],
+              "type": "integer",
+              "case": "mixedcase"
+            },
+            "form": {
+              "hint": "State of the user and his accounts",
+              "help": "State of the user and his accounts",
+              "errorMessage": "This field is required",
+              "control": "standard",
+              "displayed": "always",
+              "editable": "always",
+              "mandatory": false,
+              "multi": false
+            },
+            "initRule": {
+              "value": "999"
+            },
+            "isEnabled": false
+          },
+          {
+            "name": "preferredLanguage",
+            "defaultLabel": "Language:",
+            "identity": {
+              "authoritative": false
+            },
+            "syntax": {
+              "selection": [
+                {
+                  "value": "de",
+                  "label": "Deutsch"
+                },
+                {
+                  "value": "en",
+                  "label": "English"
+                },
+                {
+                  "value": "fr",
+                  "label": "Français"
+                },
+                {
+                  "value": "ja",
+                  "label": "Japanese"
+                },
+                {
+                  "value": "nl",
+                  "label": "Dutch"
+                }
+              ],
+              "type": "text",
+              "case": "mixedcase"
+            },
+            "form": {
+              "calculate": "if(. = '') then 'en' else .",
+              "hint": "Language for receiving emails",
+              "help": "Language for receiving emails",
+              "control": "standard",
+              "displayed": "always",
+              "editable": "always",
+              "mandatory": false,
+              "multi": false
+            },
+            "isEnabled": true
+          },
+          {
+            "name": "enatelBeginTime",
+            "defaultLabel": "Arrival date:",
+            "identity": {
+              "authoritative": false
+            },
+            "syntax": {
+              "type": "date"
+            },
+            "form": {
+              "constraint": "",
+              "hint": "Employee's arrival date",
+              "help": "Employee's arrival date must be earlier than his departure date",
+              "control": "standard",
+              "displayed": "always",
+              "editable": "always",
+              "mandatory": false,
+              "multi": false
+            },
+            "isEnabled": true
+          },
+          {
+            "name": "enatelEndTime",
+            "defaultLabel": "Departure date:",
+            "identity": {
+              "authoritative": false
+            },
+            "syntax": {
+              "type": "date"
+            },
+            "form": {
+              "constraint": "",
+              "hint": "Employee's departure date",
+              "help": "Employee's departure date must be later than his arrival date",
+              "control": "standard",
+              "displayed": "always",
+              "editable": "always",
+              "mandatory": false,
+              "multi": false
+            },
+            "isEnabled": true
+          },
+          {
+            "name": "enatelAuditId",
+            "defaultLabel": "Employee's audit identifier",
+            "identity": {
+              "authoritative": false
+            },
+            "syntax": {
+              "type": "text"
+            },
+            "form": {
+              "hint": "Employee's audit identifier",
+              "help": "Employee's audit identifier must be unique among all employees",
+              "control": "standard",
+              "displayed": "always",
+              "editable": "creation",
+              "mandatory": false,
+              "multi": false
+            },
+            "isEnabled": true
+          },
+          {
+            "name": "evdidmPrimaryAuthId",
+            "defaultLabel": "",
+            "identity": {
+              "authoritative": false
+            },
+            "syntax": {
+              "type": "text"
+            },
+            "form": {
+              "control": "standard",
+              "displayed": "never",
+              "editable": "never",
+              "mandatory": false,
+              "multi": false
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "connectorType": null
+}
