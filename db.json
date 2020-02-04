@@ -1,4 +1,5 @@
-{
+{ "templates": [
+  {
   "id": "6000001a94481146",
   "name": "Standard Identity Template (Draft)",
   "type": "IDENTITY",
@@ -449,3 +450,4 @@
   },
   "connectorType": null
 }
+]}
