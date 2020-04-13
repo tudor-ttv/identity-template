@@ -29,7 +29,7 @@
           },
           {
             "name": "givenName",
-            "defaultLabel": "Firstname *:",
+            "defaultLabel": "Firstname",
             "syntax": {
               "type": "text",
               "case": "mixedcase"
